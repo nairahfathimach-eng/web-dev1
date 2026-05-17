@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holidae - Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!--Header start-->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Untitled.png" alt="Holidae Logo"/>
+                    Holi<span>dae</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Review.html">Review</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search destinations..."/>
+                </div>
+                <button class="btn-login" onclick="openModal()">Login / Register</button>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Mobile menu-->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="package.html">Packages</a>
+        <a href="contact.html">Contact</a>
+        <a href="Review.html">Review</a>
+    </div>
+
+    <!--Review section-->
+    <section class="reviews" id="reviews">
+        <div class="section-header">
+            <span class="section-tag">Testimonials</span>
+            <h2 class="section-title">What Our Travelers Say</h2>
+            <p class="section-sub">Real stories from real adventurers who trusted us with their journeys.</p>
+        </div>
+        <div class="reviews-list">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Holidae planned every detail of our Maldives trip perfectly. The overwater villa was beyond our imagination. We'll book again without hesitation."</p>
+                <div class="reviewer">
+                    <img src="images/avatar-ann.jpeg" alt="Ann" class="reviewer-img"/>
+                    <div>
+                        <div class="reviewer-name">Ann Mitchell</div>
+                        <div class="reviewer-from">New York, USA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Thanks to Holidae, our Thailand trip was unforgettable and well planned. We enjoyed beautiful beaches and cultural tours without any worries."</p>
+                <div class="reviewer">
+                    <img src="images/alex.jpeg" alt="Alex" class="reviewer-img"/>
+                    <div>
+                        <div class="reviewer-name">alex</div>
+                        <div class="reviewer-from">London, UK</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Turkey with Holidae was pure magic. Sunset dinners, perfectly chosen hotels, and a thoughtful itinerary that balanced relaxation with exploration."</p>
+                <div class="reviewer">
+                    <img src="images/rose-james.jpeg" alt="Rose" class="reviewer-img"/>
+                    <div>
+                        <div class="reviewer-name">Rose James</div>
+                        <div class="reviewer-from">Dubai, UAE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★☆</div>
+                <p class="review-text">"Tokyo was everything and more. Our guide knew every hidden gem from tiny ramen shops to secret shrines. The cultural immersion was unmatched."</p>
+                <div class="reviewer">
+                    <img src="images/john-ethan.jpeg" alt="John" class="reviewer-img"/>
+                    <div>
+                        <div class="reviewer-name">John Ethan</div>
+                        <div class="reviewer-from">Amsterdam, Netherlands</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

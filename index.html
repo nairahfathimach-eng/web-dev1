@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Holidae-Home</title>
+
+<!--Connect google font--->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!---Connect font awesome for icon--->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!--connect the css file--> 
+<link rel="stylesheet" href="style.css">
+
+<!---Connect java script--> 
+<script defer src="script.js"></script>
+
+
+<body>
+
+    <!--Header section start-->
+<header id="header">
+    <nav class="navbar">
+
+        <!-- Logo image + Website name together -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Untitled.png" alt="Holidae Logo"/>
+                Holi<span>dae</span>
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Review.html">Review</a></li>
+            
+        </ul>
+
+        <!-- Search + Login + Hamburger -->
+        <div class="nav-actions">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search destinations..."/>
+            </div>
+            <button class="btn-login" onclick="openModal()">Login / Register</button>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </nav>
+</header>
+  <!--Mobile menu-->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="package.html">Packages</a>
+    <a href="contact.html">Contact</a>
+    <a href="Review.html">Review</a>
+</div>
+  <!--Login---> 
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <h2 id="modalTitle">Welcome Back</h2>
+ 
+      <!-- Tab Buttons -->
+      <div class="modal-tabs">
+        <div class="modal-tab active" onclick="switchTab('login', this)">Login</div>
+        <div class="modal-tab" onclick="switchTab('register', this)">Register</div>
+      </div>
+      <!-- Login Form -->
+      <div id="loginForm">
+        <input type="email" placeholder="Email address"/>
+        <input type="password" placeholder="Password"/>
+        <button class="btn-submit">Login</button>
+      </div>
+      <div id="registerForm" style="display:none">
+        <input type="text" placeholder="Full name"/>
+        <input type="email" placeholder="Email address"/>
+        <input type="password" placeholder="Password"/>
+        <input type="password" placeholder="Confirm password"/>
+        <button class="btn-submit">Create Account</button>
+      </div>
+    </div>
+  </div>
+  <!---hero section start--->
+  <section class="hero" id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active"></div>  
+      <div class="hero-slide"></div>          
+      <div class="hero-slide"></div>          
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">Explore The World</span>
+      <h1>Let's make your next  <em>trip</em> unforgettable</h1>
+      <p>Find your next destination and start your journey today.</p>
+      <div class="hero-btns">
+        <a href="package.html" class="btn-primary">Browse Packages</a>
+        <a href="contact.html" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+ 
+    <!--Slider-->
+    <div class="hero-dots">
+      <button class="hero-dot active" onclick="goToSlide(0)"></button>
+      <button class="hero-dot" onclick="goToSlide(1)"></button>
+      <button class="hero-dot" onclick="goToSlide(2)"></button>
+    </div>
+  </section>
+ <!--Booking bar--->
+  <div class="book-section" id="book">
+    <div class="book-box">
+      <div class="book-field">
+        <label><i class="fas fa-map-marker-alt"></i> Destination</label>
+        <select>
+          <option>Select Destination</option>
+          <option>Maldives, Asia</option>
+          <option>Paris, France</option>
+          <option>Istanbul,Turkey</option>
+          <option>Thailand,Bangkok</option>
+          <option>London,UK</option>
+          <option>Tokyo, Japan</option>
+        </select>
+      </div>
+      <div class="book-field">
+        <label><i class="fas fa-calendar-alt"></i> Check In</label>
+        <input type="date"/>
+      </div>
+      <div class="book-field">
+        <label><i class="fas fa-calendar-check"></i> Check Out</label>
+        <input type="date"/>
+      </div>
+      <div class="book-field">
+        <label><i class="fas fa-users"></i> Guests</label>
+        <select>
+          <option>1 Person</option>
+          <option>2 People</option>
+          <option>3 5 People</option>
+          <option>6+ People</option>
+        </select>
+      </div>
+      <button class="btn-book">Search <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+</body>
+</html>
+ 
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holidae-contact</title>
+
+ <!--Connect google font--->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!---Connect font awesome for icon--->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!--connect the css file--> 
+<link rel="stylesheet" href="style.css">
+
+<!---Connect java script--> 
+<script defer src="script.js"></script>
+</head>
+<body>
+<!--Header-->
+<header id="header">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Untitled.png" alt="Holidae Logo"/>
+                Holi<span>dae</span>
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Review.html">Review</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search destinations..."/>
+            </div>
+            <button class="btn-login" onclick="openModal()">Login / Register</button>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--Mobile menu-->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="package.html">Packages</a>
+    <a href="contact.html">Contact</a>
+    <a href="Review.html">Review</a>
+</div>
+<body>
+    
+
+<!--Contact section-->
+  <section class="contact" id="contact">
+    <div class="contact-wrap">
+ 
+      <!-- Left Contact Info -->
+      <div class="contact-info">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Plan Your Next Adventure With Us</h2>
+        <p>Have a destination in mind? Our travel experts are here to create your perfect itinerary just reach out.</p>
+        <div class="contact-detail">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-text">
+            <strong>Our Office</strong>
+            <span>Rasalkhaimah,UAE</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-text">
+            <strong>Call Us</strong>
+            <span>+97150557832</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-text">
+            <strong>Email Us</strong>
+            <span>holi@dae.travel</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!--Contact Form -->
+      <form class="contact-form" onsubmit="return false;">
+        <div class="row">
+          <input type="text" placeholder="Your Name"/>
+          <input type="email" placeholder="Email Address"/>
+        </div>
+        <input type="tel" placeholder="Phone Number"/>
+        <select>
+          <option value="">Select Package Interest</option>
+          <option>Maldives Escape</option>
+          <option>Paris Getaway</option>
+          <option>Greek Islands</option>
+          <option>Bali Retreat</option>
+          <option>African Safari</option>
+          <option>Tokyo Culture</option>
+          <option>Custom Package</option>
+        </select>
+        <textarea placeholder="Tell us about your dream trip..."></textarea>
+        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+ 
+    </div>
+  </section>
+ 
+  <!--Footer start-->
+  <footer>
+    <div class="footer-grid">
+ 
+      <!-- About Column -->
+      <div>
+        <div class="footer-logo">Holi<span>dae</span></div>
+        <p class="footer-about">Your trusted travel partner for extraordinary journeys around the world. We craft memories, one destination at a time.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+ 
+      <!-- Quick Links--->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+ 
+      <!-- Destinations-->
+      <div class="footer-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li><a href="#">Maldives</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Istanbul</a></li>
+          <li><a href="#">Thailand</a></li>
+          <li><a href="#">Tokyo</a></li>
+          <li><a href="#">London</a></li>
+        </ul>
+      </div>
+ 
+      <!-- Support-->
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+ 
+    </div>
+ 
+    <!-- copyright-->
+    <div class="footer-bottom">
+      <p>© 2026 Holidae Travel Agency. All rights reserved.</p>
+      <p>Made for explorers everywhere</p>
+    </div>
+  </footer>
+ 
+</body>
+</html>
